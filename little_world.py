@@ -4,6 +4,8 @@ import random
 
 
 # params:
+# dimension: 点灯矩阵的大小， 可以自行设置
+# turns: 游戏的轮数上线（不过当所有灯被点亮，游戏会提前结束）
 
 
 def gen_metrcis(dimension):
