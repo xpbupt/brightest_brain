@@ -23,7 +23,7 @@ def gen_metrcis(dimension):
 
 def light_node(metrics, node_num, available_node, set_add, set_minus, dimension):
     row_list = metrics[node_num]
-    node_list = set([node_num])
+    node_list = set([node_num+1])
     for i in range(dimension):
         if row_list[i]:
             node_list.add(i+1)
@@ -45,6 +45,7 @@ def get_available_node(dimension):
     available_node = range(dimension+1)
     available_node.pop(0)
     return set(available_node)
+
 
 def start_game(metrics, dimension, turns):
     available_node = get_available_node(dimension)
